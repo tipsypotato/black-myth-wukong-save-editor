@@ -1,6 +1,6 @@
 # black-myth-wukong-save-editor (WIP)
 
-infomation i've found in the game save file up to now:
+UE game save files are usually `GVAS`, infomation i've found in the game save file up to now:
 
 1. seems like some 32-byte key for encryption/decryption
 
@@ -16,3 +16,6 @@ infomation i've found in the game save file up to now:
 
 Besides the hex picture above, i tried `binwalk` to check if it's a compressed format(like palworld), but with no luck, if you are also intrested in this project, please let me know
 
+Tried hex-compare tool for two different save files, lots of duplicated codes, the hex string `84 31 A4 37` seems to be [REPLACEMENT CHARACTER](http://www.tachyonsoft.com/uc00FF.htm) in GB-18030.
+
+![hex_compare](./img/hexcompare.png)
